@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Week 15</title>
 
-    <style>
-        .view {
-            background-color: rgb(255, 255, 255);
-        }
-    </style>
 </head>
 
 
@@ -38,15 +33,14 @@
         </form>
     
         <h2>Выбор темы</h2>
-        <form action="" method="post">
-            <p><select size="1" >
-             <option selected value="Белая" id="white">Белая</option>
-             <option value="Темная" id="dark">Темная</option>
-             <option value="Синяя" id="blue">Синяя</option>
-             <option value="Серая" id="grey">Серая</option>
+        <div id="choise">
+            <p><select size="1" id="color" >
+             <option selected value="white" >Белая</option>
+             <option value="dark" >Темная</option>
+             <option value="blue" >Синяя</option>
+             <option value="grey" >Серая</option>
             </select></p>
-            <p><input type="button" value="Выбрать" id="select"></p>
-           </form>
+            <p><input type="button" value="Выбрать" id="select" class="btn" onclick="selectChange()"></p>
         </div>
     
 

@@ -76,32 +76,13 @@ function checkRegistration() {
     }
 }
 
-document.getElementById('click_registr').addEventListener('click', checkRegistration)
-
 function getMessage() {
     let first_name = document.getElementById('first_name').value;
     alert(`Привет, ${first_name}!`);
 }
 
-var color = new Array(4)
-color[1] = rgb(255, 255, 255);
-color[2] = rgb(0, 0, 0);
-color[3] = rgb(52, 50, 174);
-color[4] = rgb(121, 107, 107);
-var num = 1;
+document.getElementById('click_registr').addEventListener('click', checkRegistration)
 
-function select() {
-
-    if (num == 1) {
-        document.getElementById('viewcolor') = color[num];
-    }
-
-    if (num == 2) {
-        document.getElementById('viewcolor') = color[num];
-    }
-
-
-}
 
 
 
@@ -110,3 +91,26 @@ function select() {
 //document.querySelector(".form_number").addEventListener("keyup", function () {
 //    this.value = this.value.replace(/[^\d]/g, "");
 //});
+
+
+function selectChange() {
+
+    let color = document.getElementById("color").value;
+
+    if (color == "white") {
+        document.body.style.backgroundColor = "White";
+    }
+    else if (color == "dark") {
+        document.body.style.backgroundColor = "Black";
+    }
+    else if (color == "blue") {
+        document.body.style.backgroundColor = "Blue";
+    }
+    else if (color == "grey") {
+        document.body.style.backgroundColor = "Grey";
+    }
+}
+
+document.getElementById('select').addEventListener('click', selectChange)
+
+
