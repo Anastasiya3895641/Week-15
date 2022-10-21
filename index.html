@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Week 15</title>
+
+    <style>
+        .view {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
 </head>
 
 
 
 <body> 
+    <div class="view" id="viewcolor">
     <h2>Деление</h2>
     <form action="URL" class="division">
         <div>Введи первое число<input type="number" id="first_number"></div>
@@ -30,6 +37,17 @@
         <button type="button" id="click_registr">Зарегистрироваться</button>
         </form>
     
+        <h2>Выбор темы</h2>
+        <form action="" method="post">
+            <p><select size="1" >
+             <option selected value="Белая" id="white">Белая</option>
+             <option value="Темная" id="dark">Темная</option>
+             <option value="Синяя" id="blue">Синяя</option>
+             <option value="Серая" id="grey">Серая</option>
+            </select></p>
+            <p><input type="button" value="Выбрать" id="select"></p>
+           </form>
+        </div>
     
 
         

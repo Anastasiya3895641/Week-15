@@ -83,6 +83,26 @@ function getMessage() {
     alert(`Привет, ${first_name}!`);
 }
 
+var color = new Array(4)
+color[1] = rgb(255, 255, 255);
+color[2] = rgb(0, 0, 0);
+color[3] = rgb(52, 50, 174);
+color[4] = rgb(121, 107, 107);
+var num = 1;
+
+function select() {
+
+    if (num == 1) {
+        document.getElementById('viewcolor') = color[num];
+    }
+
+    if (num == 2) {
+        document.getElementById('viewcolor') = color[num];
+    }
+
+
+}
+
 
 
 
