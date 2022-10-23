@@ -99,7 +99,7 @@ function checkRegistration() {
 
 function getMessage() {
     let first_name = document.getElementById('first_name').value;
-    alert(`Привет, ${first_name}!`);
+    alert(`Добро пожаловать, ${first_name}!`);
 }
 
 document.getElementById('click_registr').addEventListener('click', checkRegistration)
