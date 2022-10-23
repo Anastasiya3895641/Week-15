@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Week 15</title>
-
 </head>
 
 
 
 <body> 
-    <div class="view" id="viewcolor">
-    <h2>Деление</h2>
+    <h1>Деление</h1>
     <form action="URL" class="division">
         <div>Введи первое число<input type="number" id="first_number"></div>
         <div>/</div>
@@ -23,17 +21,18 @@
         </form>
 
         <h2>Форма регистрации</h2>
-        <form action="URL" class="form" name="form">
+        <form action="URL" class="form" name="form" id="form">
         <input type="text" placeholder="Введите ваше имя" id="first_name" name="name" required> 
         <input type="tel" placeholder="Введите ваш номер" id="number"  class="form_number" pattern="^[0-9]+$" required />
         <input type="email" placeholder="Введите ваш email" id="email" pattern="\S+@[a-z]+.[a-z]+"/>
         <input type="password" placeholder="Введите ваш пароль" id="password" required> 
         <input type="password" placeholder="Повторите пароль" id="password2" required> 
-        <button type="button" id="click_registr">Зарегистрироваться</button>
+        <div id="errorMessage"></div>
+        <button type="button" class="button" id="click_registr">Зарегистрироваться</button>
         </form>
     
         <h2>Выбор темы</h2>
-        <div id="choise">
+        <div id="choise" class="view">
             <p><select size="1" id="color" >
              <option selected value="white" >Белая</option>
              <option value="dark" >Темная</option>
